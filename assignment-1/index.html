@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>TravelWave Assignment</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="app-header">
+        <h2 id="heading">Search Questions from Stack Overflow</h2>
+    </header>
+    <div class='search-box'>
+        <!-- //input fields -->
+        <div class="inputOptions">
+            <div class="item1"><label>Page:</label>
+                <input type="number" id="page" placeholder="page"></div>
+            <div class="item1"><label>Page Size:</label>
+                <input type="number" id="pageSize" placeholder="page size"></div>
+            <div class="item1"><label>From Date:</label>
+                <input type="date" id="fromDate" placeholder="From Date"></div>
+            <div class="item1"><label>To Date:</label>
+                <input type="date" id="toDate" placeholder="to date"></div>
+            <div class="item1"><label>Order:</label>
+                <select id="order">
+                    <option value="asc">asc</option>
+                    <option value="desc">desc</option>
+                </select></div>
+            <div class="item1"><label>Min Date:</label>
+                <input type="date" id="minDate" placeholder="min date"></div>
+            <div class="item1">
+                <label>Max Date:</label>
+                <input type="date" id="maxDate" placeholder="max date">
+            </div>
+            <div class="item1">
+                <label>Sort:</label>
+                <select id="sort">
+                    <option value="activity">activity</option>
+                    <option value="votes">votes</option>
+                    <option value="creation">creation</option>
+                    <option value="relevance">relevance</option>
+                </select>
+            </div>
+            <div class="item1">
+                <label>Question:</label>
+                <input type="text" id="que" placeholder="question">
+            </div>
+            <div class="item1">
+                <label>Accepted:</label>
+                <select id="accepted">
+                    <option></option>
+                    <option value="true">true</option>
+                    <option value="false">false</option>
+                </select>
+            </div>
+            <div class="item1">
+                <label>Answer:</label>
+                <input type="text" id="ans" placeholder="Answer">
+            </div>
+            <div class="item1">
+                <label>Body:</label>
+                <input type="text" id="body" placeholder="body">
+            </div>
+            <div class="item1">
+                <label>Closed:</label>
+                <select id="closed">
+                    <option></option>
+                    <option value="true">true</option>
+                    <option value="false">false</option>
+                </select>
+            </div>
+            <div class="item1">
+                <label>Migrated:</label>
+                <select id="migrated">
+                    <option></option>
+                    <option value="true">true</option>
+                    <option value="false">false</option>
+                </select>
+            </div>
+            <div class="item1">
+                <label>Notice:</label>
+                <select id="notice">
+                    <option></option>
+                    <option value="true">true</option>
+                    <option value="false">false</option>
+                </select>
+            </div>
+            <div class="item1">
+                <label>Not Tagged:</label>
+                <input type="text" id="notTagged" placeholder="Not Tagged">
+            </div>
+            <div class="item1">
+                <label>Tagged:</label>
+                <input type="text" id="tagged" placeholder="Tagged">
+            </div>
+            <div class="item1">
+                <label>User:</label>
+                <input type="text" id="user" placeholder="User">
+            </div>
+            <div class="item1">
+                <label>URL:</label>
+                <input type="text" id="url" placeholder="URL">
+            </div>
+            <div class="item1">
+                <label>Views:</label>
+                <input type="number" id="views" placeholder="Views">
+            </div>
+            <div class="item1">
+                <label>Wiki:</label>
+                <select id="wiki">
+                    <option></option>
+                    <option value="true">true</option>
+                    <option value="false">false</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="submitButton"><button id="submit">Submit</button></div>
+    <!-- solution box -->
+    <div id="iFrame">
+
+    </div>
+    <div id="solutionBox">
+        <h3 id="title"> Solution Box</h3>
+        <div class="solution" id="uiUpdation">
+            Data:
+        </div>
+    </div>
+    <script src="app.js" type="text/javascript"></script>
+</body>
+
+</html>

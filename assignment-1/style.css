@@ -1,0 +1,70 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+body {
+  background: #f5f5f5;
+}
+#heading {
+  border-bottom: solid 2px black;
+}
+input,
+option,
+select {
+  outline: none;
+  width: 230px;
+  height: 20px;
+}
+.inputOptions {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  padding: 5px;
+}
+
+.inputOptions > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 1px 10px #c3c3c3;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 15px;
+}
+.submitButton {
+  margin: 10px 0 0 48%;
+}
+#uiUpdation {
+  padding: 15px;
+  width: 95%;
+  height: 200px;
+  overflow: scroll;
+  background-color: white;
+}
+#title {
+  text-align: center;
+}
+/* // design of i frame */
+iframe {
+  width: 95%;
+  height: 200px;
+  border-radius: 15px;
+  margin-left: 15px;
+  box-shadow: 0 1px 10px #c3c3c3;
+}
+.paginationNumbers {
+  margin: 5px;
+}
+.selected {
+  background-color: blue;
+  margin: 5px;
+  color: white;
+}
