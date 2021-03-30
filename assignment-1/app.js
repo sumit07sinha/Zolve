@@ -14,7 +14,6 @@ const fetchData = async (getApi) => {
     const response = await fetch(getApi);
     try {
         const data = await response.json();
-        console.log(data);
         return data;
     } catch (error) {
         console.log("error", error);
@@ -81,23 +80,18 @@ window.onload = () => {
         console.log(getApi(inputs));
         fetchedData = await fetchData(getApi(inputs));
         renderFinalUI(fetchedData.items[0]);
-        createButton(fetchedData);
+        if(fetchedData){
+            createButton(fetchedData);
+
+        }
     });
 };
 // final output rendering
 const renderFinalUI = (data) => {
-    makeIFrameFromdata(data);
+    // makeIFrameFromdata(data);
     updateJSONDatainUI(data);
 };
-// design of iframe from the fetched data
-const makeIFrameFromdata = (data) => {
-    let questionAPI = "https://stackoverflow.com/questions/";
-    let iframeBox = document.getElementById("iFrame");
-    let createiFrame = document.getElementsByTagName("iframe")[0] || document.createElement("iframe");
-    createiFrame.src = getQuestionAPI(questionAPI, data.question_id);
-    iframeBox.appendChild(createiFrame);
-    document.getElementById("uiUpdation").innerText = JSON.stringify(data, undefined, 4);
-};
+
 // pagination
 const renderSelectedPage = (e) => {
     const selectedButtonIndex = e.target.getAttribute("data-button-index");
